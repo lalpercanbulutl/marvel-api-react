@@ -1,11 +1,13 @@
 {
+  "homepage": "https://marvel-api-task.firebaseapp.com",
   "name": "marvel-comics",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "react-scripts start",
     "build": "vite build",
+    "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest"
@@ -37,5 +39,8 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "hosting": {
+    "public": "build"
   }
 }
