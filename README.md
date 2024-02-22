@@ -13,16 +13,13 @@ git clone https://github.com/your-username/your-repository.git
 cd your-repository
 
 Install dependencies:
-bash
-Copy code
+
 npm install
 Run the development server:
 bash
 Copy code
 npm run dev
 Open your browser and navigate to http://localhost:5173/ to view the application.
-Marvel Comics Developer API Key
-To fetch data from the Marvel Comics Developer API, you'll need to obtain an API key. Visit the Marvel Developer Portal to create an account and generate your API key. Once you have the key, create a .env file in the project root and add the following:
 
 env
 Copy code
@@ -34,13 +31,30 @@ The project is organized with the following structure:
 
 src/
 components/
-Search/: Contains the main Search component.
-Characters/: Subcomponent for handling character search.
-Comics/: Subcomponent for handling comic search.
-other-components/: Additional components used in the project.
+ Search/: Contains the main Search component.
+  Characters/: Subcomponent for handling character search.
+  Comics/: Subcomponent for handling comic search.
+
 
 
 Available Scripts
 In the project directory, you can run the following scripts:
 
 npm run dev: Runs the development server.
+
+Task Details:
+
+Functional spec
+Home
+● List characters with name and image  ✓✓✓✓
+● List have to 30 limits and it has to be infinite scroll  ✓✓✓✓
+Detail
+● Show characters details (name, image, description)  ✓✓✓✓
+● List comics where the character appears  ✓✓✓✓
+● Comics have to limit with 10 and ordered by publish date desc  ✓✓✓✓
+Bonus
+● Unit Test XXXX
+● Snapshot test XXXX
+● Anything else! XXXX
+
+Notes: The description, image, and comics sections of some data are returning empty through the API. I have directly checked this from the API, and I believe the error is not on my end but originates from the API.
